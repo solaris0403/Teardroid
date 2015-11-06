@@ -1,0 +1,101 @@
+common 通用工具类
+volley 网络请求
+       注解IOC
+       数据库
+
+
+utils->
+        ArrayUtils                  ok
+        CollectionUtils             ok
+        DigestUtils                 ok              md5 + 16
+        JSONUtils                   ok              手动获取JSON中的数据
+        ListUtils                   ok
+        MapUtils                    ok
+        NetWorkUtils                ok              獲取網絡信息
+        ObjectUtils                 ok
+        PreferencesUtils            ok
+        RandomUtils                 ok              隨機數  洗牌
+        ResourceUtils               ok              asset and raw file operate
+        DensityUtils                ok              像素大小轉換
+        ScreenUtils                 ok              屏幕寬高 截圖
+        ShellUtils                  ok              shell命令
+        SingletonUtils              ok              單例   (不長用)
+        SizeUtils                   ok              1024单位转换
+        SqliteUtils                 ok              sqlite包装类 获取实例
+        StringUtils                 ok
+        SystemUtils                 ok              获取系统默认线程数量
+        TimeUtils                   ok
+        ToastUtils                  ok
+        ViewUtils                   ok
+        WakeLock                    ok              亮屏
+        FlashLight                  ok
+        ClassUtil                   ok              类信息
+        AlarmUtil                   ok              闹钟服务
+        AndroidUtil                 ok              手机信息 & MAC地址 & 开机时间
+        BitmapUtil                  ok              对位图的操作 转Byte 缩略 质量 大小位置
+        ClipboardUtil               ok              剪贴板
+        CpuUtil                     ok              CPU信息
+        DialogUtil                  no              对话框工具类（功能有待加强）
+        DisplayUtil                 ok              获取显示信息
+        FieldUtil                   ok              域工具
+        FileUtil                    no              文件工具（功能简单）
+        HandlerUtil                 ok              Handler工具类 投递到UI线程
+        HexUtil                     ok              16进制转换
+        InputMethodUtils            ok              软键盘控制显示隐藏
+        MD5Util                     ok
+        MemoryUtil                  ok              获取内存信息
+        NotificationUtil            ok
+        PackageUtil                 no              需要加强（有other）
+        PollingUtil                 no              闹钟服务（需合并）
+        RandomUtil                  no              随机数 需要合并
+        SdCardUtil                  no              SDCARD 需要合并
+        ShellUtil                   no              有另一个（徐合并）
+        TelephoneUtil               no              有BUG  电话服务
+        VibrateUtil                 ok              震动服务
+app->
+        AppUtils                    ok              获取App信息+调用系统分享
+        SilentInstaller             ok              静默安装
+        PackageUtils                ok              应用的安装卸载
+database->
+        AssetDatabaseOpenHelper     ok
+io->
+        FileUtils                   ok              file
+        IOUtils                     ok              关闭流
+        ByteUtil                    ok              字节转换
+
+        Charsets                    ok              字符转码
+        FilenameUtils               no              General filename and filepath manipulation utilities.
+        FileUtil                    no              General file manipulation utilities.
+        IOUtil                      no              General IO stream manipulation utilities.
+        StringCodingUtils           no              getBytes
+        ByteArrayOutputStream       no
+        ClosedInputStream           no
+        StringBuilderWriter         no
+http->
+        HttpUtils                   ok              简单的http请求
+math->
+        Averager                    ok              算数平均数
+        NumberUtil                  ok
+receiver->                                          接收器
+        PhoneReceiver               ok
+        ScreenReceiver              ok
+        SmsReceiver                 ok
+        TimeREceiver                ok
+data->
+        cipher                      ok              加密解密自定义算法
+AsyncExecutor->
+        AsyncExecutor               ok              异步执行
+security->
+        Base64                      ok
+assist->
+        KeyguardLock                ok              键盘锁
+        Network                     ok              网络
+        TimeAverager                ok              时间计数器（秒表功能）
+        TimeCounter                 ok              时间计数器（计算持续事件）
+        LogReader                   no              日志打印（有待加强）
+        NotificationService         no              通知
+log->
+        Log                         no              有待组合加强
+view->
+        TipsView                    no              未测试过
+
