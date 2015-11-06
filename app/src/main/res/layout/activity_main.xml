@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.tony.teardroid.view.IconButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:text="你好"
+        android:gravity="center"
+        app:iconPadding="0dp" />
+    <com.tony.teardroid.view.IconButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:text="你好"
+        android:gravity="center"
+        app:iconPadding="10dp" />
+    <com.tony.teardroid.view.IconButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:text="你好"
+        app:iconPadding="0dp" />
+    <com.tony.teardroid.view.IconButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:text="你好"
+        android:gravity="center"
+        app:iconPadding="0dp" />
+    <com.tony.teardroid.view.IconButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:drawableTop="@android:drawable/ic_menu_camera"
+        android:text="你好"
+        android:gravity="center"
+        app:iconPadding="0dp" />
+    <com.tony.teardroid.view.IconButton
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:drawableTop="@android:drawable/ic_menu_camera"
+        android:text="你好"
+        android:gravity="center"
+        app:iconPadding="20dp" />
+</LinearLayout>
