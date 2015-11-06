@@ -18,8 +18,8 @@ package com.tony.teardroid.io;
 
 import android.os.Build;
 
-import com.tony.selene.common.trinea.android.common.io.stream.ByteArrayOutputStream;
-import com.tony.selene.common.trinea.android.common.io.stream.StringBuilderWriter;
+import com.tony.teardroid.io.stream.ByteArrayOutputStream;
+import com.tony.teardroid.io.stream.StringBuilderWriter;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;

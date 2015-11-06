@@ -6,7 +6,7 @@ import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.SystemClock;
 
-import com.tony.selene.common.trinea.android.common.log.Log;
+import com.tony.teardroid.log.LogUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -29,8 +29,8 @@ public class AndroidUtil {
         WifiManager wifi = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = wifi.getConnectionInfo();
         String mac = info.getMacAddress();
-        if (Log.isPrint) {
-            Log.i(TAG, " MAC：" + mac);
+        if (LogUtils.isPrint) {
+            LogUtils.i(TAG, " MAC：" + mac);
         }
         return mac;
     }
@@ -42,8 +42,8 @@ public class AndroidUtil {
         long ut = SystemClock.elapsedRealtime() / 1000;
         int h = (int) ((ut / 3600));
         int m = (int) ((ut / 60) % 60);
-        if (Log.isPrint) {
-            Log.i(TAG, h + ":" + m);
+        if (LogUtils.isPrint) {
+            LogUtils.i(TAG, h + ":" + m);
         }
         return h + ":" + m;
     }
@@ -92,7 +92,7 @@ public class AndroidUtil {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
             sb.append("\nSERIAL             :").append(Build.SERIAL);
         }
-        Log.i(TAG, sb.toString());
+        LogUtils.i(TAG, sb.toString());
         return sb.toString();
     }
 }

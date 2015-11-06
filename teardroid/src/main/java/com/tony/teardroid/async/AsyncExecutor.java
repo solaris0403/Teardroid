@@ -4,6 +4,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
+import com.tony.teardroid.log.LogUtils;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
@@ -62,7 +64,7 @@ public class AsyncExecutor {
                 try {
                     get();
                 } catch (InterruptedException e) {
-                    Log.e(TAG, e);
+                    LogUtils.e(TAG, e);
                     worker.abort();
                     postCancel(worker);
                     e.printStackTrace();
@@ -73,7 +75,7 @@ public class AsyncExecutor {
                 } catch (CancellationException e) {
                     worker.abort();
                     postCancel(worker);
-                    Log.e(TAG, e);
+                    LogUtils.e(TAG, e);
                     e.printStackTrace();
                 }
             }

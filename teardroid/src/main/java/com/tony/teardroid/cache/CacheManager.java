@@ -3,9 +3,9 @@ package com.tony.teardroid.cache;
 import android.app.Activity;
 import android.content.Context;
 
-import com.tony.selene.common.trinea.android.common.service.HttpCache;
-import com.tony.selene.common.trinea.android.common.service.impl.ImageCache;
-import com.tony.selene.common.trinea.android.common.service.impl.ImageSDCardCache;
+import com.tony.teardroid.service.HttpCache;
+import com.tony.teardroid.service.impl.ImageCache;
+import com.tony.teardroid.service.impl.ImageSDCardCache;
 
 
 /**

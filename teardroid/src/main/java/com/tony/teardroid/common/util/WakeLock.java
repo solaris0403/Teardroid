@@ -3,7 +3,7 @@ package com.tony.teardroid.common.util;
 import android.content.Context;
 import android.os.Build;
 import android.os.PowerManager;
-import com.tony.selene.common.trinea.android.common.log.Log;
+import com.tony.teardroid.log.LogUtils;
 
 /**
  * <!-- 亮屏 -->
@@ -27,7 +27,7 @@ public class WakeLock {
      */
     public boolean isScreenOn() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ECLAIR_MR1) {
-            Log.e("Log : ", "can not call isScreenOn if SDK_INT < 7 ");
+            com.tony.teardroid.log.LogUtils.e("Log : ", "can not call isScreenOn if SDK_INT < 7 ");
             return false;
         } else {
             return powerManager.isScreenOn();
@@ -36,18 +36,18 @@ public class WakeLock {
 
     public void turnScreenOn() {
         //点亮亮屏
-        Log.i("Log : ", "PowerManager.WakeLock : wakeLock.isHeld: " + wakeLock.isHeld());
+        LogUtils.i("Log : ", "PowerManager.WakeLock : wakeLock.isHeld: " + wakeLock.isHeld());
         if (!wakeLock.isHeld()) {
-            Log.i("Log : ", "PowerManager.WakeLock : 点亮屏幕");
+            LogUtils.i("Log : ", "PowerManager.WakeLock : 点亮屏幕");
             wakeLock.acquire();
         }
     }
 
     public void turnScreenOff() {
         //释放亮屏
-        Log.i("Log : ", "PowerManager.WakeLock : wakeLock.isHeld: " + wakeLock.isHeld());
+        LogUtils.i("Log : ", "PowerManager.WakeLock : wakeLock.isHeld: " + wakeLock.isHeld());
         if (wakeLock.isHeld()) {
-            Log.i("Log : ", "PowerManager.WakeLock : 灭掉屏幕");
+            LogUtils.i("Log : ", "PowerManager.WakeLock : 灭掉屏幕");
             try {
                 wakeLock.release();
             } catch (Exception e) {

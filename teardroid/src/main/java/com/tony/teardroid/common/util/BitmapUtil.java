@@ -15,9 +15,9 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
+import android.util.Log;
 
-import com.tony.selene.common.trinea.android.common.log.Log;
-import com.tony.selene.common.trinea.android.common.security.Base64;
+import com.tony.teardroid.security.Base64;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

@@ -1,7 +1,7 @@
 package com.tony.teardroid.dao;
 
 
-import com.tony.selene.common.trinea.android.common.service.impl.ImageSDCardCache;
+import com.tony.teardroid.service.impl.ImageSDCardCache;
 
 /**
  * ImageSDCardCacheDao

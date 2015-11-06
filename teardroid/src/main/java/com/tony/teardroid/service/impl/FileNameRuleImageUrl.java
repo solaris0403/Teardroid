@@ -1,9 +1,9 @@
 package com.tony.teardroid.service.impl;
 
 
-import com.tony.selene.common.trinea.android.common.service.FileNameRule;
-import com.tony.selene.common.trinea.android.common.io.FileUtils;
-import com.tony.selene.common.trinea.android.common.util.StringUtils;
+import com.tony.teardroid.common.util.StringUtils;
+import com.tony.teardroid.io.FileUtils;
+import com.tony.teardroid.service.FileNameRule;
 
 /**
  * File name rule, used when saving images in {@link ImageSDCardCache}

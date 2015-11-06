@@ -5,8 +5,8 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.os.Build;
 import android.text.format.Formatter;
+import com.tony.teardroid.log.LogUtils;
 
-import com.tony.selene.common.trinea.android.common.log.Log;
 
 /**
  * Get memory info.
@@ -61,8 +61,8 @@ public class MemoryUtil {
      */
     public static String printMemInfo() {
         String info = FileUtil.getFileOutputString(MEM_INFO_PATH);
-        if (Log.isPrint) {
-            Log.i(TAG, "_______  内存信息:   \n" + info);
+        if ( LogUtils.isPrint) {
+            LogUtils.i(TAG, "_______  内存信息:   \n" + info);
         }
         return info;
     }
@@ -84,7 +84,7 @@ public class MemoryUtil {
     @TargetApi(Build.VERSION_CODES.CUPCAKE)
     public static ActivityManager.MemoryInfo printMemoryInfo(Context context) {
         ActivityManager.MemoryInfo mi = getMemoryInfo(context);
-        if (Log.isPrint) {
+        if (LogUtils.isPrint) {
             StringBuilder sb = new StringBuilder();
             sb.append("_______  Memory :   ");
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
@@ -93,7 +93,7 @@ public class MemoryUtil {
             sb.append("\navailMem        :").append(mi.availMem);
             sb.append("\nlowMemory       :").append(mi.lowMemory);
             sb.append("\nthreshold       :").append(mi.threshold);
-            Log.i(TAG, sb.toString());
+            LogUtils.i(TAG, sb.toString());
         }
         return mi;
     }

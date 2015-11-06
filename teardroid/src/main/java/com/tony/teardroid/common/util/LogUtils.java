@@ -1,7 +1,9 @@
 package com.tony.teardroid.common.util;
 
 import android.util.Log;
-import com.tony.selene.common.BuildConfig;
+
+import com.tony.teardroid.BuildConfig;
+
 
 /**
  * Created by user on 10/26/15.

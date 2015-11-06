@@ -1,7 +1,7 @@
 package com.tony.teardroid.assist;
 
 
-import com.tony.selene.common.trinea.android.common.log.Log;
+import com.tony.teardroid.log.LogUtils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -49,7 +49,7 @@ public class LogReader extends Thread {
 
     @Override
     public void run() {
-        Log.i(TAG, "log reader(catcher) is running..---------------------------");
+        LogUtils.i(TAG, "log reader(catcher) is running..---------------------------");
         BufferedWriter bw = null;
         try {
             mLogcatProc = Runtime.getRuntime().exec("logcat " + packageName + ":I");
@@ -77,7 +77,7 @@ public class LogReader extends Thread {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            Log.i(TAG, "Log reader(catcher) and bufferwriter has closed. ------------------");
+            LogUtils.i(TAG, "Log reader(catcher) and bufferwriter has closed. ------------------");
             try {
                 if (mReader != null) {
                     mReader.close();

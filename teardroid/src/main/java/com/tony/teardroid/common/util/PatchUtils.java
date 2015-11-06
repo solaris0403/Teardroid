@@ -1,7 +1,7 @@
 package com.tony.teardroid.common.util;
 
 
-import com.tony.selene.common.trinea.android.common.entity.PatchResult;
+import com.tony.teardroid.entity.PatchResult;
 
 /**
  * PatchUtils

@@ -2,8 +2,8 @@ package com.tony.teardroid.common.util;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
+import  com.tony.teardroid.log.LogUtils;
 
-import com.tony.selene.common.trinea.android.common.log.Log;
 
 /**
  * @author MaTianyu
@@ -25,7 +25,7 @@ public class DisplayUtil {
      */
     public static DisplayMetrics printDisplayInfo(Context context) {
         DisplayMetrics dm = getDisplayMetrics(context);
-        if (Log.isPrint) {
+        if (LogUtils.isPrint) {
             StringBuilder sb = new StringBuilder();
             sb.append("_______  显示信息:  ");
             sb.append("\ndensity         :").append(dm.density);
@@ -35,7 +35,7 @@ public class DisplayUtil {
             sb.append("\nscaledDensity   :").append(dm.scaledDensity);
             sb.append("\nxdpi            :").append(dm.xdpi);
             sb.append("\nydpi            :").append(dm.ydpi);
-            Log.i(TAG, sb.toString());
+            LogUtils.i(TAG, sb.toString());
         }
         return dm;
     }

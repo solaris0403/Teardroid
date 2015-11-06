@@ -4,12 +4,12 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.tony.selene.common.trinea.android.common.constant.DbConstants;
-import com.tony.selene.common.trinea.android.common.dao.ImageSDCardCacheDao;
-import com.tony.selene.common.trinea.android.common.entity.CacheObject;
-import com.tony.selene.common.trinea.android.common.service.impl.ImageSDCardCache;
-import com.tony.selene.common.trinea.android.common.util.SqliteUtils;
-import com.tony.selene.common.trinea.android.common.util.StringUtils;
+import com.tony.teardroid.common.util.SqliteUtils;
+import com.tony.teardroid.common.util.StringUtils;
+import com.tony.teardroid.constant.DbConstants;
+import com.tony.teardroid.dao.ImageSDCardCacheDao;
+import com.tony.teardroid.entity.CacheObject;
+import com.tony.teardroid.service.impl.ImageSDCardCache;
 
 import java.util.Map.Entry;
 

@@ -1,5 +1,10 @@
 package com.tony.teardroid.io;
 
+import android.text.TextUtils;
+
+import com.tony.teardroid.common.util.ListUtils;
+import com.tony.teardroid.common.util.StringUtils;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,10 +18,6 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.text.TextUtils;
-
-import com.tony.selene.common.trinea.android.common.util.ListUtils;
-import com.tony.selene.common.trinea.android.common.util.StringUtils;
 
 /**
  * File Utils

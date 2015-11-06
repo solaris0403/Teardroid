@@ -1,7 +1,7 @@
 package com.tony.teardroid.data.cipher;
 
 
-import com.tony.selene.common.trinea.android.common.security.Base64;
+import com.tony.teardroid.security.Base64;
 
 /**
  * @author MaTianyu

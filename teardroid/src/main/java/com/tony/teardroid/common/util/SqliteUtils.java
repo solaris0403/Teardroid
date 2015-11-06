@@ -3,7 +3,8 @@ package com.tony.teardroid.common.util;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.tony.selene.common.trinea.android.common.database.DbHelper;
+import com.tony.teardroid.database.DbHelper;
+
 
 /**
  * SqliteUtils

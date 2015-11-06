@@ -12,6 +12,8 @@ import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
 import android.util.Log;
 
+import com.tony.teardroid.log.LogUtils;
+
 import java.util.List;
 
 /**
@@ -34,11 +36,11 @@ public class SmsReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         try {
-            if (Log.isPrint) {
+            if (LogUtils.isPrint) {
                 Log.i(TAG, "收到广播：" + intent.getAction());
                 Bundle bundle = intent.getExtras();
                 for (String key : bundle.keySet()) {
-                    Log.i(TAG, key + " : " + bundle.get(key));
+                    LogUtils.i(TAG, key + " : " + bundle.get(key));
                 }
             }
             Object[] pdus = (Object[]) intent.getExtras().get("pdus");
@@ -112,7 +114,7 @@ public class SmsReceiver extends BroadcastReceiver {
      * @param msg
      */
     public static void sendMsgToPhone(String phone, String msg) {
-        Log.i(TAG, "发送手机：" + phone + " ,内容： " + msg);
+        LogUtils.i(TAG, "发送手机：" + phone + " ,内容： " + msg);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.DONUT) {
             SmsManager manager = SmsManager.getDefault();
             List<String> texts = manager.divideMessage(msg);
@@ -120,7 +122,7 @@ public class SmsReceiver extends BroadcastReceiver {
                 manager.sendTextMessage(phone, null, txt, null, null);
             }
         }else{
-            Log.e(TAG, "发送失败，系统版本低于DONUT，" + phone + " ,内容： " + msg);
+            LogUtils.e(TAG, "发送失败，系统版本低于DONUT，" + phone + " ,内容： " + msg);
         }
 
     }

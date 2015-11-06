@@ -4,7 +4,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.tony.selene.common.trinea.android.common.log.Log;
+import com.tony.teardroid.log.LogUtils;
 
 import java.lang.reflect.Method;
 
@@ -173,21 +173,21 @@ public class Network {
 		ConnectivityManager connectivity = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 		if (connectivity != null) {
 			NetworkInfo in = connectivity.getActiveNetworkInfo();
-			Log.i(TAG, "-------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-------------");
-			Log.i(TAG, "getActiveNetworkInfo: " + in);
+			LogUtils.i(TAG, "-------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-------------");
+			LogUtils.i(TAG, "getActiveNetworkInfo: " + in);
 			NetworkInfo[] info = connectivity.getAllNetworkInfo();
 			if (info != null) {
 				for (int i = 0; i < info.length; i++) {
 					// if (info[i].getType() == ConnectivityManager.TYPE_WIFI) {
-					Log.i(TAG, "NetworkInfo[" + i + "]isAvailable : " + info[i].isAvailable());
-					Log.i(TAG, "NetworkInfo[" + i + "]isConnected : " + info[i].isConnected());
-					Log.i(TAG, "NetworkInfo[" + i + "]isConnectedOrConnecting : " + info[i].isConnectedOrConnecting());
-					Log.i(TAG, "NetworkInfo[" + i + "]: " + info[i]);
+					LogUtils.i(TAG, "NetworkInfo[" + i + "]isAvailable : " + info[i].isAvailable());
+					LogUtils.i(TAG, "NetworkInfo[" + i + "]isConnected : " + info[i].isConnected());
+					LogUtils.i(TAG, "NetworkInfo[" + i + "]isConnectedOrConnecting : " + info[i].isConnectedOrConnecting());
+					LogUtils.i(TAG, "NetworkInfo[" + i + "]: " + info[i]);
 					// }
 				}
-				Log.i(TAG, "\n");
+				LogUtils.i(TAG, "\n");
 			} else {
-				Log.i(TAG, "getAllNetworkInfo is null");
+				LogUtils.i(TAG, "getAllNetworkInfo is null");
 			}
 		}
 		return false;

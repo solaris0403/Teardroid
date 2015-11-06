@@ -11,8 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
-
-import com.tony.selene.common.trinea.android.common.log.Log;
+import android.util.Log;
 
 import java.util.ArrayList;
 

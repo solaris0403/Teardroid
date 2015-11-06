@@ -1,6 +1,7 @@
 package com.tony.teardroid.assist;
 
-import com.tony.selene.common.trinea.android.common.log.Log;
+
+import android.util.Log;
 
 /**
  * Time Counter.

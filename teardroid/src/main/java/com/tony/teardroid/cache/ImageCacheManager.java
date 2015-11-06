@@ -8,16 +8,16 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 
-import com.tony.selene.common.trinea.android.common.cache.CacheManager;
-import com.tony.selene.common.trinea.android.common.entity.CacheObject;
-import com.tony.selene.common.trinea.android.common.entity.FailedReason;
-import com.tony.selene.common.trinea.android.common.io.FileUtils;
-import com.tony.selene.common.trinea.android.common.service.impl.FileNameRuleImageUrl;
-import com.tony.selene.common.trinea.android.common.service.impl.ImageCache;
-import com.tony.selene.common.trinea.android.common.service.impl.ImageMemoryCache;
-import com.tony.selene.common.trinea.android.common.service.impl.ImageSDCardCache;
-import com.tony.selene.common.trinea.android.common.service.impl.PreloadDataCache;
-import com.tony.selene.common.trinea.android.common.service.impl.RemoveTypeLastUsedTimeFirst;
+import com.tony.teardroid.entity.CacheObject;
+import com.tony.teardroid.entity.FailedReason;
+import com.tony.teardroid.io.FileUtils;
+import com.tony.teardroid.service.impl.FileNameRuleImageUrl;
+import com.tony.teardroid.service.impl.ImageCache;
+import com.tony.teardroid.service.impl.ImageMemoryCache;
+import com.tony.teardroid.service.impl.ImageSDCardCache;
+import com.tony.teardroid.service.impl.PreloadDataCache;
+import com.tony.teardroid.service.impl.RemoveTypeLastUsedTimeFirst;
+
 
 /**
  * ImageCacheManager

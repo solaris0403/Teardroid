@@ -13,7 +13,7 @@ import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 import android.text.TextUtils;
 
-import com.tony.selene.common.trinea.android.common.log.Log;
+import com.tony.teardroid.log.LogUtils;
 
 
 /**
@@ -82,7 +82,7 @@ public class NotificationService extends NotificationListenerService {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.i(TAG, "onCreate..");
+        LogUtils.i(TAG, "onCreate..");
 
         if (notificationListener != null) {
             notificationListener.onServiceCreated(this);
@@ -92,7 +92,7 @@ public class NotificationService extends NotificationListenerService {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.i(TAG, "onStartCommand..");
+        LogUtils.i(TAG, "onStartCommand..");
 
         return notificationListener == null ? START_STICKY : notificationListener.onServiceStartCommand(this, intent, flags, startId);
     }
@@ -100,7 +100,7 @@ public class NotificationService extends NotificationListenerService {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.i(TAG, "onDestroy..");
+        LogUtils.i(TAG, "onDestroy..");
 
         if (notificationListener != null) {
             notificationListener.onServiceDestroy();
@@ -112,14 +112,14 @@ public class NotificationService extends NotificationListenerService {
     /*----------------- 通知回调 -----------------*/
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
-        if (Log.isPrint) {
-            Log.i(TAG, sbn.toString());
+        if (LogUtils.isPrint) {
+            LogUtils.i(TAG, sbn.toString());
             Notification notification = sbn.getNotification();
-            Log.i(TAG, "tickerText : " + notification.tickerText);
+            LogUtils.i(TAG, "tickerText : " + notification.tickerText);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 Bundle bundle = notification.extras;
                 for (String key : bundle.keySet()) {
-                    Log.i(TAG, key + ": " + bundle.get(key));
+                    LogUtils.i(TAG, key + ": " + bundle.get(key));
                 }
             }
         }
@@ -139,7 +139,7 @@ public class NotificationService extends NotificationListenerService {
     public void printCurrentNotifications() {
         StatusBarNotification[] ns = getActiveNotifications();
         for (StatusBarNotification n : ns) {
-            Log.i(TAG, String.format("%20s",n.getPackageName()) + ": " + n.getNotification().tickerText);
+            LogUtils.i(TAG, String.format("%20s",n.getPackageName()) + ": " + n.getNotification().tickerText);
         }
     }
 

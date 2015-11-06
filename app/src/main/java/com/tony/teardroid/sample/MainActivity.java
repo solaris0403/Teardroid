@@ -1,4 +1,4 @@
-package com.tony.teardroid;
+package com.tony.teardroid.sample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

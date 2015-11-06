@@ -1,8 +1,8 @@
 package com.tony.teardroid.service.impl;
 
 
-import com.tony.selene.common.trinea.android.common.entity.CacheObject;
-import com.tony.selene.common.trinea.android.common.service.CacheFullRemoveType;
+import com.tony.teardroid.entity.CacheObject;
+import com.tony.teardroid.service.CacheFullRemoveType;
 
 /**
  * Remove type when cache is full.<br/>

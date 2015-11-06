@@ -3,7 +3,7 @@ package com.tony.teardroid.assist;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.os.Build;
-import com.tony.selene.common.trinea.android.common.log.Log;
+import com.tony.teardroid.log.LogUtils;
 
 /**
  * <!-- 解锁 -->
@@ -28,7 +28,7 @@ public class KeyguardLock {
      */
     public boolean isKeyguardLocked() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-            Log.e("Log : ", "can not call isKeyguardLocked if SDK_INT < 16 ");
+            LogUtils.e("Log : ", "can not call isKeyguardLocked if SDK_INT < 16 ");
             return false;
         } else {
             return keyguardManager.isKeyguardLocked();
@@ -41,7 +41,7 @@ public class KeyguardLock {
      */
     public boolean isKeyguardSecure() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-            Log.e("Log : ", "can not call isKeyguardSecure if SDK_INT < 16 ");
+            LogUtils.e("Log : ", "can not call isKeyguardSecure if SDK_INT < 16 ");
             return false;
         } else {
             return keyguardManager.isKeyguardSecure();

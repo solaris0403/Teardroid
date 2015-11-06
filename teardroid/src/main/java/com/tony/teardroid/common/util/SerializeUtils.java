@@ -1,6 +1,7 @@
 package com.tony.teardroid.common.util;
 
-import com.tony.selene.common.trinea.android.common.io.IOUtils;
+
+import com.tony.teardroid.io.IOUtils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

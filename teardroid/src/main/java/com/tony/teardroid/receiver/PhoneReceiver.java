@@ -5,9 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.tony.teardroid.common.util.StringUtils;
+import com.tony.teardroid.log.LogUtils;
 
 
 /**
@@ -45,12 +45,12 @@ public class PhoneReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (Log.isPrint) {
-            Log.i(TAG, "action: " + intent.getAction());
-            Log.d(TAG, "intent : ");
+        if (LogUtils.isPrint) {
+            LogUtils.i(TAG, "action: " + intent.getAction());
+            LogUtils.d(TAG, "intent : ");
             Bundle bundle = intent.getExtras();
             for (String key : bundle.keySet()) {
-                Log.d(TAG, key + " : " + bundle.get(key));
+                LogUtils.d(TAG, key + " : " + bundle.get(key));
             }
         }
         if (NEW_OUTGOING_CALL.equals(intent.getAction())) {

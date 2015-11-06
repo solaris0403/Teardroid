@@ -2,9 +2,9 @@ package com.tony.teardroid.service.impl;
 
 import android.graphics.Bitmap;
 
-import com.tony.selene.common.trinea.android.common.entity.CacheObject;
-import com.tony.selene.common.trinea.android.common.service.CacheFullRemoveType;
-import com.tony.selene.common.trinea.android.common.image.ImageUtils;
+import com.tony.teardroid.entity.CacheObject;
+import com.tony.teardroid.image.ImageUtils;
+import com.tony.teardroid.service.CacheFullRemoveType;
 
 
 /**

@@ -3,12 +3,12 @@ package com.tony.teardroid.dao.impl;
 import android.content.ContentValues;
 import android.database.Cursor;
 
-import com.tony.selene.common.trinea.android.common.constant.DbConstants;
-import com.tony.selene.common.trinea.android.common.dao.HttpCacheDao;
-import com.tony.selene.common.trinea.android.common.entity.HttpResponse;
-import com.tony.selene.common.trinea.android.common.util.SqliteUtils;
-import com.tony.selene.common.trinea.android.common.util.StringUtils;
-import com.tony.selene.common.trinea.android.common.util.TimeUtils;
+import com.tony.teardroid.common.util.SqliteUtils;
+import com.tony.teardroid.common.util.StringUtils;
+import com.tony.teardroid.common.util.TimeUtils;
+import com.tony.teardroid.constant.DbConstants;
+import com.tony.teardroid.dao.HttpCacheDao;
+import com.tony.teardroid.entity.HttpResponse;
 
 import java.util.HashMap;
 import java.util.Map;

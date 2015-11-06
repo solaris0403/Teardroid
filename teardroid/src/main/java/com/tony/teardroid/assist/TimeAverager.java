@@ -1,7 +1,7 @@
 package com.tony.teardroid.assist;
 
 
-import com.tony.selene.common.trinea.android.common.math.Averager;
+import com.tony.teardroid.math.Averager;
 
 /**
  * 时间均值计算器,只能用于单线程计时。
