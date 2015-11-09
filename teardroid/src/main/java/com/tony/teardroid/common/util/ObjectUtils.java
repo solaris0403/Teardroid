@@ -1,9 +1,7 @@
-package com.tony.teardroid.util;
+package com.tony.teardroid.common.util;
 
 /**
  * Object Utils
- * 
- * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2011-10-24
  */
 public class ObjectUtils {
 

@@ -3,6 +3,11 @@ volley 网络请求
        注解IOC
        数据库
 
+1.首先需要通用的一些小工具类（common）
+2.一些通用的小View(view)
+3.网络类{包含网络请求，文件上传/下载，以及图片加载}(internet)
+4.数据库工具(database)
+
 
 utils->
         ArrayUtils                  ok
