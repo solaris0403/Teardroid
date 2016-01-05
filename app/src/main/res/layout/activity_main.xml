@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.tony.teardroid.view.IconButton
-        android:drawableLeft="@android:drawable/ic_btn_speak_now"
+    <ListView
+        android:id="@+id/lst_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello"
-        app:iconPadding="10dp" />
+        android:layout_height="match_parent"></ListView>
 </LinearLayout>
