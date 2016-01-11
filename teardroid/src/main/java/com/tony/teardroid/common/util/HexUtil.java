@@ -158,5 +158,4 @@ public class HexUtil {
         System.out.println("转换后：" + encodeStr);
         System.out.println("还原后：" + decodeStr);
     }
-
 }
