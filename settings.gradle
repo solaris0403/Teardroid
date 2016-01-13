@@ -1,1 +1,1 @@
-include ':app', ':teardroid'
+include ':app', ':teardroid', ':flux'

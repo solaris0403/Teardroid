@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Teardroid.iml" filepath="$PROJECT_DIR$/Teardroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flux/flux.iml" filepath="$PROJECT_DIR$/flux/flux.iml" />
       <module fileurl="file://$PROJECT_DIR$/teardroid/teardroid.iml" filepath="$PROJECT_DIR$/teardroid/teardroid.iml" />
     </modules>
   </component>
