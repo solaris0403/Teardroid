@@ -1,7 +1,6 @@
 package com.tony.flux.actions;
 
 /**
- * 注意Action一旦创建是不可更改的， 所以它的字段类型修饰为final类型.
  * Action通过ActionCreator的帮助类产生并传递给Dispatcher
  */
 public class Action<T> {
