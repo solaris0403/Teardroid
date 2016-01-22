@@ -3,9 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <ListView
-        android:id="@+id/lst_content"
+    <EditText
+        android:layout_width="80dp"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/lyt_introduce"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:background="@android:drawable/edit_text"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/edt_introduce"
+            android:layout_width="80dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 </LinearLayout>
